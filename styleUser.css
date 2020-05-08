@@ -1,0 +1,237 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.userAccount{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 10px;
+    column-gap: 1em;
+}
+.userAccount .profileBoard{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.userAccount .profileBoard h1{
+    font-size: 18px;
+}
+
+.userAccount .profileBoard{
+    display: grid;
+    /* height: 500px; */
+    grid-template-columns: 1fr;
+    border-right: 1px solid rgba(241, 241, 241, 0.884);
+    /* background-color: rgba(0, 0, 0, 0.822); */
+}
+.userAccount .profileBoard .identity img{
+    width:40px; 
+    height: 40px;
+    border-radius: 40px;
+}
+.userAccount .profileBoard .identity h1{
+   font-size: 18px;
+   text-align: center;
+}
+.userAccount .profileBoard .identity p{
+    font-size: 13px;
+    text-align: center;
+ }
+.userAccount .profileBoard .manager div{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.userAccount .profileBoard .manager div img{
+    width:20px; 
+    height: 20px;
+    margin: 5px;
+}
+.userAccount .profileBoard .manager div p{
+    font-size: 13px;
+    margin: 5px;
+
+}
+.userAccount .reflexibleBoard{
+    height:60px;
+     /* row-gap: 0px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard{
+    background-color: rgb(248, 248, 248);
+    height: 35px;
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns: 15fr 1fr 1fr 1fr 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.userAccount .reflexibleBoard .headerBoard div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard div img{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.userAccount .reflexibleBoard .headerBoard div p{
+font-size: 13px;
+margin-top:5px;
+}
+.userAccount .reflexibleBoard .operations{
+    /* background-color: wheat; */
+    border-bottom: 2px solid orange;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 4fr;
+    column-gap: 1px;
+    height: 30px;
+}
+.userAccount .reflexibleBoard .operations p{
+    font-size: 14px;
+    margin:5px
+}
+.userAccount .reflexibleBoard .operations ul{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+.userAccount .reflexibleBoard .operations ul div{
+    display: none;
+    padding: 10px;
+    background-color: white;
+    z-index: 100;
+    position: relative;
+    border-left: 1px solid orange;
+}
+.userAccount .reflexibleBoard .operations ul div li{
+    font-size: 13px;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+.userAccount .reflexibleBoard .operations button{
+    background-color: transparent;
+    border: 0px;
+    height: 25px;
+    font-size: 14px;
+}
+
+.reflexibleBoard .managerGoesHere{
+   display: grid;
+   background-color: gainsboro;
+   grid-template-columns: 1fr;
+}
+.reflexibleBoard .managerGoesHere h1{
+    font-size: 18px;
+    margin: 10px;
+}
+.reflexibleBoard .managerGoesHere .executeInPub{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+    column-gap: 1px;
+ }
+ .reflexibleBoard .managerGoesHere .executeInPub button{
+    background-color: white;
+    height: 30px;
+    border: 0px;
+ }
+
+ .reflexibleBoard .managerGoesHere .containerPublished{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    
+ }
+ .reflexibleBoard .managerGoesHere p{
+     font-size: 13px;
+     line-height: 20px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub{
+    display: grid;
+    background-color: rgb(255, 254, 254);
+    grid-template-columns: 1fr;
+    height: 40px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 2fr;
+    height: 40px;
+}
+ .reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub{
+     display: grid;
+     /* background-color: rgb(255, 255, 255); */
+     grid-template-columns: 1fr;
+     /* height: 40px; */
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    /* background-color: blue; */
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm1 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm1 div{
+   height: 25px;
+   padding: 5px;
+   background-color: transparent;  
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    /* margin: 10px; */
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub p{
+    padding:5px;
+    font-size: 13px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub img{
+    width:20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+    height: 40px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    row-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .openListPub .shapeMe .firstLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    
+}
+.reflexibleBoard .managerGoesHere .containerPublished .openListPub .shapeMe .firstLine img{
+    width: 100%;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .openListPub .shapeMe .secondLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .openListPub .shapeMe .secondLine img{
+   width:100%;
+}

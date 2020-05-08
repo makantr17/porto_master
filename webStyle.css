@@ -1,0 +1,212 @@
+body{
+    background-image: url("/PORTO-MASTER/icons/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.95;
+    z-index: 0.5px;
+    margin: -10px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+.GrablogIn{
+    z-index: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 24%;
+    background-color: rgb(170, 170, 170);
+    margin-left: 36%;
+    /* padding: 100px; */
+}
+
+.GrablogIn .loginSection{
+    margin: 20px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+}
+
+.GrablogIn .loginSection #headerL{
+    height: 80px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.GrablogIn .loginSection #headerL h1{
+    text-align: center;
+    font-size: 25px;
+    margin:10px;
+    /* background-color: orange; */
+}
+.GrablogIn .loginSection .formSection form{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+}
+.GrablogIn .loginSection .formSection form input{
+    height: 25px;
+    padding: 5px;
+}
+.GrablogIn .loginSection .formSection form div{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+.GrablogIn .loginSection .formSection form #submit{
+    height: 30px;
+    border-radius: 10px;
+    border:0px;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+}
+.GrablogIn .loginSection .formSection form div label{
+    /* height: 25px; */
+    /* margin-top: -15px; */
+    padding-top: 6px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.GrablogIn .loginSection div p{
+    font-size: 14px;
+}
+.GrablogIn .loginSection div p a{
+    color: rgb(47, 255, 238);
+    text-decoration: none;
+}
+
+
+.GrapRegist{
+    z-index: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    background-color: rgb(199, 197, 197);
+    margin-left: 25%;
+    /* padding: 100px; */
+}
+.GrapRegist .RegisterSection{
+    margin: 10px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding-bottom: 50px;
+}
+
+.GrapRegist .RegisterSection #headerR{
+    height: 50px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.GrapRegist .RegisterSection #headerR h1{
+    font-size: 25px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+.GrapRegist .RegisterSection .formSectionReg form{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+}
+
+.GrapRegist .RegisterSection .formSectionReg form #section1{
+    background-color: black;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section1 #contSection1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 2.5em;
+   
+}
+.GrapRegist .RegisterSection .formSectionReg form #section1 #contSection1 div{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    column-gap: 5px;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section1 input{
+    border-radius: 5px;
+    border: 1px solid rgb(233, 231, 231);
+}
+
+
+.GrapRegist .RegisterSection .formSectionReg form #section2{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    column-gap: 2em;
+    row-gap: 1em;
+    
+}
+.GrapRegist .RegisterSection .formSectionReg form #section2 #tasks{
+    overflow: auto;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section2 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* column-gap: 1em; */
+    margin-top: 50px;
+    background-color: rgb(233, 229, 229);
+    height: 200px;
+    /* overflow: auto; */
+    border: 1px solid gainsboro;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section2 div div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border:1px solid gray; */
+    /* column-gap: 1em; */
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section2 div div p{
+    margin: 0px;
+    padding: 5px;
+}
+.GrapRegist .RegisterSection .formSectionReg form #section3{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+
+
+
+
+
+.GrapRegist .RegisterSection .formSectionReg form input{
+    height: 25px;
+    padding: 5px;
+}
+
+.GrapRegist .RegisterSection .formSectionReg form #submit{
+    height: 30px;
+    border-radius: 10px;
+    border:0px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+}
+.GrapRegist .RegisterSection .formSectionReg form div label{
+    padding-top: 6px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.GrablogIn .RegisterSection div p{
+    font-size: 14px;
+}
+
+
+
+/* User account start here */

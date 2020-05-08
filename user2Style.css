@@ -1,0 +1,973 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.userAccount{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    column-gap: 1em;
+}
+.userAccount .profileBoard{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* height: 100%; */
+    /* background-color: orange; */
+    padding: 10px;
+    background-image: url("/PORTO-MASTER/icons/back1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    color: white;
+    height: 620px;
+}
+.userAccount .profileBoard h1{
+    font-size: 16px;
+}
+
+.userAccount .profileBoard{
+    display: grid;
+    /* height: 500px; */
+    grid-template-columns: 1fr;
+    border-right: 1px solid rgba(241, 241, 241, 0.884);
+    /* background-color: rgba(0, 0, 0, 0.822); */
+}
+.userAccount .profileBoard .identity img{
+    width:40px; 
+    height: 40px;
+    border-radius: 40px;
+    margin: 20px;
+}
+.userAccount .profileBoard .identity h1{
+   font-size: 18px;
+   text-align: left;
+   color: teal;
+}
+.userAccount .profileBoard .identity p{
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: left;
+    color: rgb(207, 206, 206);
+ }
+.userAccount .profileBoard .manager div{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.userAccount .profileBoard .manager div:hover{
+   opacity: 0.6;
+   cursor: pointer;
+}
+.userAccount .profileBoard .manager div img{
+    width:20px; 
+    height: 20px;
+    margin: 5px;
+}
+.userAccount .profileBoard .manager div p{
+    font-size: 13px;
+    margin: 5px;
+}
+.userAccount .reflexibleBoard{
+    height:60px;
+     /* row-gap: 0px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard{
+    background-color: rgb(248, 248, 248);
+    height: 35px;
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns: 15fr 1fr 1fr 1fr 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.userAccount .reflexibleBoard .headerBoard div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.userAccount .reflexibleBoard .headerBoard div img{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.userAccount .reflexibleBoard .headerBoard div p{
+font-size: 13px;
+margin-top:5px;
+}
+.userAccount .reflexibleBoard .operations{
+    /* background-color: wheat; */
+    border-bottom: 2px solid orange;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    column-gap: 1px;
+    height: 30px;
+}
+.userAccount .reflexibleBoard .operations p{
+    font-size: 14px;
+    margin:5px
+}
+.userAccount .reflexibleBoard .operations ul{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+.userAccount .reflexibleBoard .operations ul div{
+    display: none;
+    padding: 10px;
+    background-color: white;
+    z-index: 100;
+    position: relative;
+    border-left: 1px solid orange;
+}
+.userAccount .reflexibleBoard .operations ul div li{
+    font-size: 13px;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+.userAccount .reflexibleBoard .operations button{
+    background-color: transparent;
+    border: 0px;
+    height: 25px;
+    font-size: 14px;
+}
+
+.reflexibleBoard .managerGoesHere{
+   display: grid;
+   /* background-color: gainsboro; */
+   background-image: url("/PORTO-MASTER/icons/back2.jpg");
+   grid-template-columns: 1fr;
+   background-repeat: no-repeat;
+   /* background-color: white; */
+   background-size: cover;
+}
+.reflexibleBoard .managerGoesHere #manageH{
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+.reflexibleBoard .managerGoesHere h1{
+    font-size: 18px;
+    margin: 10px;
+}
+.reflexibleBoard .managerGoesHere .executeInPub{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+    column-gap: 1px;
+ }
+ .reflexibleBoard .managerGoesHere .executeInPub button{
+    background-color: white;
+    height: 30px;
+    border: 0px;
+ }
+
+ .reflexibleBoard .managerGoesHere .timeline .grabTimeline{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    background-color: white;
+ }
+ .reflexibleBoard .managerGoesHere .timeline .grabTimeline h1{
+    font-size: 16px;
+    font-weight: normal;
+ }
+ .reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineHeader{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineHeader #labelColor{
+    background-color: rgb(247, 245, 242);
+    padding: 10px;
+    color: plum;
+}
+
+.reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineHeader #labelColor div{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5px;
+    margin: 0px;
+}
+
+.reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+}
+
+.reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineBody .timeforProject #ruler{
+   height: 40px;
+   background-color: rgb(240, 235, 235);
+   border: rgb(224, 224, 224);
+   margin: 0px;
+   border-right: 2px solid orangered;
+   border-left: 2px solid orange;
+}
+.reflexibleBoard .managerGoesHere .timeline .grabTimeline .timelineBody .timeforProject #ruler div{
+   height: 80%;
+   margin-top: 3px;
+}
+
+
+
+ .reflexibleBoard .managerGoesHere .containerPublished{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+ }
+ .reflexibleBoard .managerGoesHere p{
+     font-size: 13px;
+     line-height: 20px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .deletePub form{
+    display: grid;
+    padding-top: 20px;
+    background-color: rgb(255, 254, 254);
+    grid-template-columns: 1fr;
+    height: 40px;
+    row-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .deletePub form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: rgb(245, 244, 244);
+}
+.reflexibleBoard .managerGoesHere .containerPublished .deletePub form div input{
+    padding: 5px;
+    border: 0px;
+    background-color: transparent;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .deletePub form div label{
+    padding: 5px;
+    font-size: 14px;
+}
+
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub{
+    display: grid;
+    background-color: rgb(255, 254, 254);
+    grid-template-columns: 1fr;
+    height: 40px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished #createNewPublishHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:25px;
+    margin-bottom: 20px;
+}
+
+.reflexibleBoard .managerGoesHere #headerPublished{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    height: 50px;
+    border-top: 1px solid rgb(245, 245, 243);
+    /* border-bottom: 1px solid orange; */
+    background-color: rgb(245, 245, 243);
+}
+.reflexibleBoard .managerGoesHere #headerPublished p{
+   font-size: 12px;
+   padding-left: 5px;
+   font-weight: lighter;
+}
+
+
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 2fr;
+    height: 40px;
+}
+ .reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub{
+     display: grid;
+     grid-template-columns: 1fr;
+     /* height: 40px; */
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished  .newPub form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+    column-gap: 3em;
+    /* background-color: blue; */
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm2{
+    display: grid;
+    grid-template-columns: 1fr;
+   row-gap: 2em;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm2 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm2 div input{
+    background-color: transparent;
+    width: fit-content;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm2 div label{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: lighter;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm1 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm1 div input{
+   height: 25px;
+   padding: 5px;
+   background-color: transparent;  
+   border: 1px solid rgb(238, 230, 230);
+   border-radius: 5px;
+ }
+ .reflexibleBoard .managerGoesHere .containerPublished .newPub form .sectionForm1 div label{
+    font-size: 12px;
+    text-align: right;
+    padding: 5px;  
+  }
+ .reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    /* margin: 10px; */
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub p{
+    padding:5px;
+    font-size: 13px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub img{
+    width:20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .listPub .childListPub img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+    height: 40px;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    row-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe .firstLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe .firstLine img{
+    width: 100%;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe .secondLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.reflexibleBoard .managerGoesHere .containerPublished .holdListPub .openListPub .shapeMe .secondLine img{
+   width:100%;
+}
+
+/* Style Create project */
+.reflexibleBoard .managerGoesHere .createProjects .shareRessources{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    row-gap: 1em;
+    padding-top: 30px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    row-gap: 1em;
+    padding-top: 10px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    background-color: white;
+    padding-top: 10px;
+    column-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    column-gap: 2em;
+    
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form #firstSection{
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr;
+    row-gap: 1.5em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form #firstSection input{
+   height: 25px;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid rgb(216, 216, 216);
+}
+
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #listCollabs{
+    height: 150px;
+    overflow: auto;
+    background-color: rgb(243, 243, 243);
+    /* border-radius: 2em; */
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #pasteCollabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+    overflow: auto;
+    padding: 5px;
+    border-radius: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: rgb(241, 236, 236);
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #pasteCollabs div{
+    height: 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    /* border: 1px solid gray; */
+    background-color: white;
+    padding: 5px;
+    column-gap: 2px;
+    border-radius: 10px;
+    
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #pasteCollabs div p{
+    font-size: 12px;
+    margin: 0px;
+    padding-top: 0px;
+    /* padding: 5px; */
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #pasteCollabs div img{
+    width: 18px;
+    height: 18px;
+    /* margin: 5px; */
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #listCollabs ul{
+    margin: 0px;
+    padding: 10px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #listCollabs ul li{
+    list-style: none;
+    font-size: 12px;
+    height: 15px;
+    /* width: 60%; */
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid rgb(221, 221, 221);
+}
+.reflexibleBoard .managerGoesHere .createProjects .addRessources form .addeur #listCollabs ul li:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.reflexibleBoard .managerGoesHere .createProjects .createHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    padding-top: 10px;
+    column-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .createHeader button{
+    height: 25px;
+    border: 1px solid rgb(241, 240, 240);
+    background-color: rgb(245, 245, 245);
+}
+
+/* createProject styling */
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro h1{
+    margin-left: 10px;
+    padding: 0px;
+    /* color: orange; */
+}
+
+/* .reflexibleBoard .managerGoesHere .createProjects .formCreatePro div div{
+    margin-top: 1em;
+} */
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section1{
+    width: 40%;
+}
+
+ .reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    column-gap: 3em;
+    
+ }
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section1 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div div{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    /* column-gap: 2em; */
+ }
+ .reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div #descripto{
+   height: 100px;
+ }
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section1 div label{
+   /* margin-left: 50px; */
+   text-align: right;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro div input, 
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro div select{
+    height: 25px;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .sectionRoot #styleRoot label{
+    margin-top: 16px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div #taskedL{
+    margin-top: 1em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div #taskedL h1{
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 div #taskedL #inputTasks{
+   display: grid;
+   grid-template-columns: 1fr 7fr 3fr;
+   margin: 0px;
+   row-gap: 5px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 #taskedL #inputTasks input{
+   border:0px;
+   background-color: rgb(231, 231, 231);
+   margin-top: 5px;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .section2 #taskedL #inputTasks label{
+   margin-top: 10px;
+   margin-bottom: 0px;
+   font-size: 14px;
+   color: black;
+}
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .sectionRoot #confirmAll{
+    display: grid;
+    grid-template-columns: 2% 98%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro .sectionRoot #confirmAll label{
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.reflexibleBoard .managerGoesHere .createProjects .formCreatePro div label{
+    font-size: 14px;
+    font-size: 12px;
+    color: rgb(138, 138, 138);
+    font-weight: lighter;
+}
+
+/* Style list of Project */
+.reflexibleBoard .managerGoesHere .allProject .projectStatus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30px;
+    padding: 5px;
+    column-gap: 2em;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+.reflexibleBoard .managerGoesHere .allProject .popMeUp{
+    display: grid;
+    width: 80%; 
+    padding-right:50px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    grid-template-columns: 1fr;
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #bodyPop{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    column-gap: 2em;
+}
+
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #headerPop{
+    display: grid;
+    grid-template-columns: 92% 8%;
+} 
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #bodyPop #detailspopMe{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+} 
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #headerPop form input{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    margin: 10px;
+    position: fixed;
+    background-image: url("/PORTO-MASTER/icons/icon/close.png");
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer; 
+    /* width: 100%; */
+}
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #headerPop form img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #bodyPop #submitPopMe form{
+   display: grid;
+   grid-template-columns: 1fr;
+   column-gap: 2em;
+   row-gap: 1em;
+}
+
+.reflexibleBoard .managerGoesHere .allProject .popMeUp #bodyPop #submitPopMe form input{
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(214, 214, 214);
+ }
+ .reflexibleBoard .managerGoesHere .allProject .popMeUp #bodyPop #submitPopMe form select{
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(214, 214, 214);
+ }
+
+.reflexibleBoard .managerGoesHere .allProject .boardProject{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    height: 40px;
+    background-color: white;
+    
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid rgb(245, 245, 238);
+    background-color: rgba(252, 249, 249, 0.753);
+    box-shadow: 0px 3px 0px 0px rgba(211, 203, 203, 0.349);
+    /* background-image:  url("/PORTO-MASTER/icons/back1.jpg"); */
+    padding: 5px;
+    border-radius: 20px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject h1{
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: gray;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro{
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px;
+    height: 110px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .joindre{
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 1fr;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .joindre p{
+    font-size: 11px;
+    padding: 5px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .joindre form{
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid rgb(190, 190, 190);
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .joindre form img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 5px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .joindre form input{
+   background-color: green;
+   color: white;
+   border: 0px;
+   padding-top: 0px;
+   font-size: 15px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .neededInfoPro{
+    height:100px;
+    overflow: auto;
+    border-top: 1px solid rgb(190, 190, 190);
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .neededInfoPro table tr th{
+    text-align: left;
+    font-size: 12px;
+    color: orange;
+    padding: 2px;
+}
+.reflexibleBoard .managerGoesHere .allProject .boardProject .sampleProject .descriptionPro .neededInfoPro table tr td{
+    text-align: left;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 2px;
+    padding-right: 5px;
+}
+
+
+/* Collaboration styling start here */
+.reflexibleBoard .managerGoesHere .collaboration .collabBoard{
+ 
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 1em;
+   height: 40px;
+   background-color: white;
+}
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 1em;
+   row-gap: 1em;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 10px; 
+}
+
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel #clickOnPro{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(241, 241, 241);
+    /* background-image: url("/PORTO-MASTER/icons/back.jpg"); */
+    height: 80px;
+    /* color: rgb(218, 158, 29); */
+}
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel #clickOnPro img{
+    width: 20px;
+    height: 20px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel #clickOnPro:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel #clickOnPro h1{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(75, 73, 73);
+    margin: 5px;   
+}
+.reflexibleBoard .managerGoesHere .collaboration .collabPanel #clickOnPro p{
+    margin: 5px;
+    font-size: 12px;
+}
+
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab{
+    /* border-top: 1px solid rgb(211, 211, 211); */
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+}
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab .rootPro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 15fr;
+    background-color: rgb(238, 238, 238);
+}
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab .rootPro h1{
+    font-size: 15px;
+    text-align: center;
+    color: rgba(63, 61, 61, 0.733);
+    font-weight: bold;
+}
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab .rootPro p{
+    font-size: 14px;
+    padding-left: 5px;
+    color: rgb(32, 32, 32);
+    font-weight: lighter;
+}
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab .rootPro img{
+    margin: 10px;
+   width: 25px;
+   height: 25px;
+   border-radius: 20px;
+}
+
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab button{
+    height: 30px;
+    background-color: rgba(240, 240, 240, 0.938);
+    border: 1px solid rgb(240, 240, 240);
+    padding: 5px;
+    text-align: left;
+}
+.reflexibleBoard .managerGoesHere .collaboration .opreationCollab button img{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+    float: left;
+    margin-top: -3px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks{
+    display: grid;
+    grid-template-columns:1fr;
+    column-gap: 1em;
+    row-gap: 0em;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks h1{
+    font-size: 13px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    /* text-transform: uppercase; */
+    width: fit-content;
+    border-left: 13px solid orange;
+    padding-left: 5px;
+ }
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .secondTask{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 0em;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources{
+    display: grid;
+    border-top: 1px solid rgb(221, 218, 218);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 0em;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources div #ressources{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    margin-top: 10px;
+    background-color: rgb(252, 252, 252);
+    padding: 5px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources div 
+#ressources #contentRe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    background-color: rgb(252, 252, 252);
+    padding: 5px;
+    
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources div 
+#ressources #headerRe{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 1em;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.459);
+    /* padding: 5px; */
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources div 
+#ressources #headerRe div{
+    padding: 5px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources div 
+#ressources #headerRe div p{
+   margin: 0px;
+   padding: 0px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources
+ div #ressources a{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid rgb(231, 226, 226);
+    
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources
+ div #ressources button{
+    background-color: transparent;
+    border: 0px;
+    height: 25px;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources
+ div #ressources button img{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    float: right;
+}
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .tableressources
+ div #ressources #contentRe button p{
+    float: left;
+    margin: 5px;
+}
+
+
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .secondTask .detailsPro h2{
+   padding-left: 15px;
+   margin-left: 0px;
+   font-size: 14px;
+   border-left: 10px solid orange;
+   font-weight: normal;
+}
+
+
+
+.reflexibleBoard .managerGoesHere .collaboration .executeCollab .generalTaks .mytasks ul li{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: lighter;
+    list-style: square;
+    padding-bottom: 5px;
+    font-style: italic;
+}
